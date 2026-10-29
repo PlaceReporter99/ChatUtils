@@ -46,7 +46,8 @@ public class ChatUtils {
         modContainer.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
     }
 
-    private void commonSetup(final FMLCommonSetupEvent event) {
+    @SubscribeEvent
+    public void commonSetup(final FMLCommonSetupEvent event) {
         LOGGER.info("This is PlaceReporter99's ChatUtils mod.");
     }
 
